@@ -1,16 +1,42 @@
-# Travel Agency Site
+# Site Agência de Viagens
 
-Hi! This is project developed with the intention learning of HTML and CSS.
+<p align="center">
+  <a href="#o-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#desktop-behavior">Behavior</a>
+</p>
 
-Nice things that could be learned from this project
-- Flexbox concepts
-	- We covered the basics of flexbox, like: flex-direction, justify-content and align-items.
-- How to integrate with Google Maps
-	- The site contact session uses a map to show the address, for traht we used Google Maps integration and documentation.
+## O Projeto
+Este é um projeto desenvolvido com a intenção de aprendizagem de HTML e CSS.
+
+Conceitos aprendidos com esse projeto
+- Flexbox
+	- O básico de flexbox, como: flex-direction, justify-content e align-items.
+- Como fazer integração com Google Maps
+	- A sessão de contatos do site conta com um mapa para mostrar o endereço e para isso foi usada a integração com o Google Maps.
 - Media Queries
-	- All the site is responsive for smartphones, tablets and desktops
+	- Todo site é responsivo para smartphones, tablets e desktops
+
+## Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+
+Integração
+ - [Google Maps](https://developers.google.com/maps?hl=pt-br)
 
 ## Desktop Behavior
-![enter image description here](https://github.com/LeandroFilie/Site-Viagens/blob/master/assets/gif-desktop.gif?raw=true)
+<p align="center">
+	<img src='.github/gif-desktop.gif' height="400px">
+</p>
+
 ## Mobile Behavior
-![enter image description here](https://github.com/LeandroFilie/Site-Viagens/blob/master/assets/gif-mobile.gif?raw=true)
+<p align="center">
+  <img src='.github/gif-mobile.gif' height="700px">
+</p>
+
+---
+Feito com :heart: by [Leandro Filié](https://github.com/LeandroFilie)
