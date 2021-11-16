@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root{
+    --primary-color: #050A30;
+}
 
 * {
     box-sizing: border-box;
@@ -7,7 +11,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -22,38 +26,75 @@ a{
 header nav{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
 }
 
-header nav p{
-    font-weight: bold;
+header nav .logo{
+    height: 60px;
+    width: 60px;
 }
 
 header nav ul{
     display: flex;
+    gap: 3rem;
+
+    padding: 0;
 }
 
 header nav ul li{
-    margin: 0 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 0.25rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li span{
+    height: 1.5px;
+    width: 0%;
+    background: var(--primary-color);
+    transition: all .5s;
+}
+
+header nav ul li:hover span{
+    width: 100%;
 }
 
 header{
-    height: calc(100vh - 150px);
-    background: no-repeat center/cover url('./assets/header.jpg');
+    height: 100%;
+    width: 100%;
+}
+
+header .slider{
+    margin: 0;
+    padding: 0;
+}
+
+header .slider img{
+    position: absolute;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
 
 .header-content{
-    height: calc(100% - 51px);
+    height: 100%;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 10rem 1rem;
 }
 
 .header-content h1{
     margin-bottom: 10px;
+    margin-top: 0;
     font-size: 5rem;
 }
 .header-content p{
@@ -67,13 +108,13 @@ button{
     border-radius: 8px;
     font-weight: bold;
     border: 0;
-    background: #762a2e;
+    background: var(--primary-color);
     color: white;
 }
 
 .pacotes{
     background: #e5e5e5;
-    padding: 15px;
+    padding: 1rem;
 }
 
 .pacotes .pacotes-cards{
@@ -91,8 +132,8 @@ button{
 }
 
 .pacotes .card{
-    width: 350px;
-    height: 450px;
+    width: 20rem;
+    height: 100%;
     border-radius: 24px 0px;
     background: white;
     margin: 25px;
@@ -105,7 +146,7 @@ button{
 }
 
 .pacotes .card-image{
-    width: 350px;
+    width: 100%;
     height: 300px;
     border-radius: 24px 0 0 0;
     object-fit: cover;
@@ -144,7 +185,7 @@ button{
     position: absolute;
     right: 0;
     top: 15px;
-    background: #762a2e;
+    background: var(--primary-color);
     border-radius: 8px 0 0 8px;
     padding: 5px 10px;
 }
@@ -153,7 +194,7 @@ button{
     position: absolute;
     left: 0;
     top: 270px;
-    background: #762a2e;
+    background: var(--primary-color);
     border-radius: 0 8px 8px 0;
     padding: 5px 10px;
 }
@@ -166,7 +207,7 @@ button{
 }
 
 .servicos{
-    padding: 15px;
+    padding: 1rem;
 }
 
 .servicos .servicos-card{
@@ -194,7 +235,7 @@ button{
 }
 
 .servicos .card svg:HOVER{
-    stroke: #762a2e;
+    stroke: var(--primary-color);
     transform: scale(1.1);
 }
 
@@ -214,19 +255,19 @@ button{
 
 #map {
     height: 400px;
-    /* The height is 400 pixels */
     width: 100%;
-    /* The width is the width of the web page */
+    border-radius: 8px;
+    padding: 2rem;
 }
 
 .contato{
-    padding: 60px;
+    padding: 3rem;
     background: #e5e5e5;
     position: relative;
 }
 
 .contato .contato-card{
-    width: 350px;
+    width: fit-content;
     height: 300px;
     background: white;
     position: absolute;
@@ -239,11 +280,8 @@ button{
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-}
 
-.contato .contato-card h1{
-    padding-left: 50px;
-    text-align: left;
+    padding: 1rem;
 }
 
 .contato .contato-card li{
@@ -252,11 +290,18 @@ button{
     color: gray;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+}
+
+.contato .contato-card ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .contato .contato-card li svg{
     width: 16px;
-    margin: 10px;
 }
 
 /* responsividade */
@@ -299,7 +344,7 @@ button{
         width: 100%;
         padding: 0;
         margin: 0;
-        background: #762a2e;
+        background: var(--primary-color);
         color: white;
         height: 55px;
         display: flex;
@@ -307,6 +352,14 @@ button{
         align-items: center;
         font-weight: bold;
         z-index: 100;
+    }
+
+    header nav ul li{
+        color: #fff;
+    }
+
+    header nav ul li:first-child{
+        display: none;
     }
 
     header nav p{
