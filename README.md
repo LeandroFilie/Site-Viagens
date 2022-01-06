@@ -44,12 +44,12 @@ Integração
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/LeandroFilie/dev.finances.git
+$ git clone https://github.com/LeandroFilie/Site-Viagens.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd dev.finances
+$ cd Site-Viagens
 ```
-Para acesso de forma online, [clique aqui](https://dev-finances-leandrofilie.vercel.app/)
+Para acesso de forma online, [clique aqui](https://site-viagens-leandrofilie.vercel.app/)
 
 
 ---
