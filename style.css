@@ -43,7 +43,7 @@ header nav ul{
 }
 
 header nav ul li{
-    color: var(--primary-color);
+    color: #fff;
     font-weight: 500;
     padding: 0.25rem;
 
@@ -54,7 +54,7 @@ header nav ul li{
 header nav ul li span{
     height: 1.5px;
     width: 0%;
-    background: var(--primary-color);
+    background: #fff;
     transition: all .5s;
 }
 
@@ -78,6 +78,31 @@ header .slider img{
     width: 100%;
     z-index: -1;
     object-fit: cover;
+    filter: brightness(0.5);
+}
+
+header .slider-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    margin-bottom: 5rem;
+}
+
+header .slider-navigation span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 0.75rem;
+    height: 0.75rem;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+}
+
+header .slider-navigation span.active{
+    background: rgba(256, 256, 256, 0.75);
 }
 
 .header-content{
@@ -96,11 +121,13 @@ header .slider img{
     margin-bottom: 10px;
     margin-top: 0;
     font-size: 5rem;
+    color: #fff;
 }
 .header-content p{
     display: block;
     max-width: 500px;
     font-size: 1.3rem;
+    color: #fff;
 }
 
 button{
@@ -356,6 +383,7 @@ button{
 
     header nav ul li{
         color: #fff;
+        padding: 0;
     }
 
     header nav ul li:first-child{
