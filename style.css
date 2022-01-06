@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -331,6 +335,33 @@ button{
     width: 16px;
 }
 
+.back-to-top{
+    background: var(--primary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.back-to-top.show svg{
+    stroke: #fff;
+}
+
 /* responsividade */
 
 /*Especial para Mapa*/
@@ -369,7 +400,7 @@ button{
         bottom: 0;
         left: 0;
         width: 100%;
-        padding: 0;
+        padding: 0 1rem;
         margin: 0;
         background: var(--primary-color);
         color: white;
@@ -397,5 +428,9 @@ button{
 
     .header-content{
         justify-content: flex-start;
+    }
+
+    .header-content h1{
+        font-size: 4rem;
     }
 }

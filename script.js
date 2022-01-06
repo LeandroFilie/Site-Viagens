@@ -18,7 +18,7 @@ const imagesSlider = [
 
 const home = document.getElementById('home')
 const imgSlider = document.getElementById('imgSlider')
-const sliderNavigation = document.querySelectorAll('.slider-item');
+const sliderNavigation = document.querySelectorAll('.slider-item')
 sliderNavigation[0].classList.add('active')
 
 function handlerSliderNavigation(index){
@@ -59,3 +59,15 @@ function handlerItemsImages(name, description, image){
 
 let i = 1;
 setInterval(slider, 5000)
+
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+window.addEventListener('scroll', backToTop)
