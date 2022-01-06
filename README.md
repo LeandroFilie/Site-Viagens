@@ -33,11 +33,11 @@ Integração
 
 ## Behavior
 <p align="center">
-  <img src='.github/mockup.png' >
+  <img src='.github/mockup.png' height="400px">
 </p>
 
 <p align="center">
-	<img src='.github/gif.gif'>
+	<img src='.github/gif.gif' height="400px">
 </p>
 
 ## Executando o projeto
